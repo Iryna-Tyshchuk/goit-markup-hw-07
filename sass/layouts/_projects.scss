@@ -45,10 +45,6 @@
   }
 }
 
-.flex-element:hover .flex-top-text {
-  transform: translateY(0);
-}
-
 .flex-top-wrap {
   position: relative;
   overflow: hidden;
@@ -70,4 +66,8 @@
   transform: translateY(100%);
   transition: transform 300ms ease;
   overflow: auto;
+
+  .flex-element:hover & {
+    transform: translateY(0);
+  }
 }
