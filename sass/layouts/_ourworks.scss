@@ -1,19 +1,20 @@
 .our-works {
   padding-top: 0;
 }
-.our-works-list {
+.our-works__list {
   display: flex;
+  gap: 30px;
 }
 
-.our-works-list .item + .item {
-  margin-left: 30px;
-}
+// .our-works-list .item + .item {
+//   margin-left: 30px;
+// }
 
-.our-works-item {
+.our-works__item {
   position: relative;
 }
 
-.our-works-label {
+.our-works__label {
   position: absolute;
   bottom: 0;
 
