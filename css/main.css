@@ -1,4 +1,3 @@
-@charset "UTF-8";
 *,
 *::before,
 *::after {
@@ -58,9 +57,7 @@ body {
 .link {
   text-decoration: none;
 }
-
-.link:hover,
-.link:focus {
+.link:focus, .link:hover {
   color: var(--accent-color);
 }
 
@@ -99,6 +96,28 @@ body {
   /* margin-left: auto;
   margin-right: auto; */
   margin: 0 auto;
+}
+
+.logo {
+  display: block;
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+
+.logoblue {
+  color: var(--accent-color);
+}
+
+.logoblack {
+  color: var(--logo-black-color);
+}
+
+.logowhite {
+  color: var(--primary-white-color);
 }
 
 .btn {
@@ -159,9 +178,7 @@ body {
   align-items: center;
   justify-content: center;
 }
-
-.close-btn:focus,
-.close-btn:hover {
+.close-btn:focus, .close-btn:hover {
   fill: var(--accent-color);
   border-color: var(--accent-color);
 }
@@ -196,62 +213,51 @@ body {
   color: #000000;
   padding-left: 42px;
 }
-
 .modal-input:focus {
   border-color: var(--accent-color);
+}
+.modal-input::-moz-placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--primary-text-color);
+}
+.modal-input:-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--primary-text-color);
+}
+.modal-input::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--primary-text-color);
+}
+.modal-input:not(:-moz-placeholder-shown):not(:focus):valid {
+  background-color: rgba(159, 245, 159, 0.418);
+}
+.modal-input:not(:-ms-input-placeholder):not(:focus):valid {
+  background-color: rgba(159, 245, 159, 0.418);
+}
+.modal-input:not(:placeholder-shown):not(:focus):valid {
+  background-color: rgba(159, 245, 159, 0.418);
+}
+.modal-input:not(:-moz-placeholder-shown):not(:focus):invalid {
+  background-color: rgba(245, 159, 159, 0.418);
+}
+.modal-input:not(:-ms-input-placeholder):not(:focus):invalid {
+  background-color: rgba(245, 159, 159, 0.418);
+}
+.modal-input:not(:placeholder-shown):not(:focus):invalid {
+  background-color: rgba(245, 159, 159, 0.418);
 }
 
 .modal-input:focus + .input-icon {
   fill: var(--accent-color);
-}
-
-.modal-input::-moz-placeholder, .modal-text::-moz-placeholder {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: var(--primary-text-color);
-}
-
-.modal-input:-ms-input-placeholder, .modal-text:-ms-input-placeholder {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: var(--primary-text-color);
-}
-
-.modal-input::placeholder,
-.modal-text::placeholder {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: var(--primary-text-color);
-}
-
-.modal-input:not(:-moz-placeholder-shown):not(:focus):valid {
-  background-color: rgba(159, 245, 159, 0.418);
-}
-
-.modal-input:not(:-ms-input-placeholder):not(:focus):valid {
-  background-color: rgba(159, 245, 159, 0.418);
-}
-
-.modal-input:not(:placeholder-shown):not(:focus):valid {
-  background-color: rgba(159, 245, 159, 0.418);
-}
-
-.modal-input:not(:-moz-placeholder-shown):not(:focus):invalid {
-  background-color: rgba(245, 159, 159, 0.418);
-}
-
-.modal-input:not(:-ms-input-placeholder):not(:focus):invalid {
-  background-color: rgba(245, 159, 159, 0.418);
-}
-
-.modal-input:not(:placeholder-shown):not(:focus):invalid {
-  background-color: rgba(245, 159, 159, 0.418);
 }
 
 .modal-label {
@@ -291,6 +297,27 @@ body {
   padding: 12px 16px;
   resize: none;
   margin-top: 4px;
+}
+.modal-text::-moz-placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--primary-text-color);
+}
+.modal-text:-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--primary-text-color);
+}
+.modal-text::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--primary-text-color);
 }
 
 /* .modal-field-privacy {
@@ -362,28 +389,6 @@ body {
   align-items: center;
 }
 
-.logo {
-  display: block;
-  font-family: Raleway, sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  text-decoration: none;
-}
-
-.logoblue {
-  color: var(--accent-color);
-}
-
-.logoblack {
-  color: var(--logo-black-color);
-}
-
-.logowhite {
-  color: var(--primary-white-color);
-}
-
 /* Site nav */
 .site-nav {
   display: flex;
@@ -429,7 +434,6 @@ body {
 .current {
   color: var(--accent-color);
 }
-
 .current::after {
   content: "";
   width: 100%;
@@ -446,9 +450,7 @@ body {
   margin-right: 10px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.icon:hover,
-.icon:focus {
+.icon:hover, .icon:focus {
   fill: currentColor;
   color: var(--accent-color);
 }
@@ -483,9 +485,7 @@ body {
   letter-spacing: 0.06em;
   background-color: var(--accent-color);
 }
-
-.button-hero:hover,
-.button-hero:focus {
+.button-hero:hover, .button-hero:focus {
   background-color: #188ce8;
 }
 
@@ -632,9 +632,7 @@ body {
   fill: #afb1b8;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.team-icon-link:hover,
-.team-icon-link:focus {
+.team-icon-link:hover, .team-icon-link:focus {
   background-color: var(--accent-color);
   fill: var(--primary-white-color);
 }
@@ -705,15 +703,13 @@ body {
   background: rgba(255, 255, 255, 0.1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.footer-icon-link:hover, .footer-icon-link:focus {
+  background-color: var(--accent-color);
+  fill: var(--primary-white-color);
+}
 
 .social-icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-icon-link:hover,
-.footer-icon-link:focus {
-  background-color: var(--accent-color);
-  fill: var(--primary-white-color);
 }
 
 .footer > .container {
@@ -762,7 +758,6 @@ body {
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   outline: transparent;
   background-color: transparent;
@@ -792,15 +787,13 @@ body {
   justify-content: center;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.our-clients-link:hover, .our-clients-link:focus {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
+}
 
 .our-clients-svg {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.our-clients-link:hover,
-.our-clients-link:focus {
-  fill: var(--accent-color);
-  border-color: var(--accent-color);
 }
 
 .filter {
@@ -825,9 +818,7 @@ body {
   letter-spacing: 0.03em;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.filter-btn:hover,
-.filter-btn:focus {
+.filter-btn:hover, .filter-btn:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -866,41 +857,18 @@ body {
   margin-right: 30px;
   margin-bottom: 30px;
   border: 1px solid #eeeeee;
-  /* Встановить стилі правої рамки
-        border-right-width: 1px;
-        border-right-style: solid;
-        border-right-color: #EEEEEE;
-
-        border-bottom-width: 1px;
-        border-bottom-style: solid;
-        border-bottom-color: #EEEEEE;
-
-        border-left-width: 1px;
-        border-left-style: solid;
-        border-left-color: #EEEEEE; */
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .flex-element:nth-child(3n) {
   margin-right: 0;
 }
-
 .flex-element:nth-last-child(-n+3) {
   margin-bottom: 0;
 }
-
-.flex-element:hover,
-.flex-element:focus {
+.flex-element:hover, .flex-element:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-/* Альтернатива
-.flex-element:not(:nth-child(3n)){
-    margin-right: 30px;
-}
-.flex-element:not(:nth-last-child(-n + 3)){
-    margin-bottom: 30px;
-} */
 .flex-element:hover .flex-top-text {
   transform: translateY(0);
 }

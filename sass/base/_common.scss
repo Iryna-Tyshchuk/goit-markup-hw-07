@@ -16,11 +16,10 @@ body {
 
 .link {
   text-decoration: none;
-}
-
-.link:hover,
-.link:focus {
-  color: var(--accent-color);
+  &:focus,
+  &:hover {
+    color: var(--accent-color);
+  }
 }
 
 .section {

@@ -30,11 +30,10 @@
   letter-spacing: 0.06em;
 
   background-color: var(--accent-color);
-}
-
-.button-hero:hover,
-.button-hero:focus {
-  background-color: #188ce8;
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
 }
 
 .overlay {
